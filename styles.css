@@ -1,0 +1,109 @@
+/* Estilo para el cuerpo del texto */
+body {
+    font-family: cursive, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+/* Estilo para los títulos */
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #0078D7;
+    text-align: center;
+}
+
+header{
+    background: #ffa8d9;
+    color: red;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar a {
+    color: #f128d0;
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #f69fd6;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 300px;
+    height: auto;
+    border: 2px solid #ffa8d9;
+    border-radius: 5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1); /* Aumenta el tamaño al pasar el mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Agrega una sombra */
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+/* Estilo para el carrusel */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.slider img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    z-index: 1;
+}
+
+.slider img.active {
+    opacity: 1;
+    z-index: 2;
+}
